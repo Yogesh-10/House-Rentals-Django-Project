@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = 'wurbvwv9fh98f3w90f3w90hwr0vwoivboiwrbvio0wrhf90whf3w90fh90h0h(*R*(@(*RU@*U@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -86,10 +86,11 @@ WSGI_APPLICATION = 'realestate.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'house-rental DB',
-        'USER': 'postgres',
-        'PASSWORD': 'Yogesh10@',
-        'HOST': 'localhost'
+        'NAME': 'd4j8sara94cehv',
+        'HOST': 'ec2-52-207-25-133.compute-1.amazonaws.com',
+        'PORT': 5432,
+        'USER': 'inmqijvswiujrj',
+        'PASSWORD': 'df366f56fe34c01eaf4a7a70d9dfddc60cc0f758a2722d76bf6a287a19f4e3e9'
     }
 }
 
