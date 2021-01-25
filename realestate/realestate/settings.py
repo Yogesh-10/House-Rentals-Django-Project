@@ -83,16 +83,15 @@ WSGI_APPLICATION = 'realestate.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'd4j8sara94cehv',
-#         'HOST': 'ec2-52-207-25-133.compute-1.amazonaws.com',
-#         'PORT': 5432,
-#         'USER': 'inmqijvswiujrj',
-#         'PASSWORD': 'df366f56fe34c01eaf4a7a70d9dfddc60cc0f758a2722d76bf6a287a19f4e3e9'
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'house-rentalDB',
+        'USER': 'postgres',
+        'PASSWORD': 'Yogesh10@',
+        'HOST': 'localhost'
+    }
+}
 
 db_from_env = dj_database_url.config(conn_max_age=600)
 DATABASES['default'].update(db_from_env)
