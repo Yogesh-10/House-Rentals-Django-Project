@@ -65,7 +65,6 @@ MIDDLEWARE = [
 ]
 
 CORS_ORIGIN_ALLOW_ALL = True
-# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 ROOT_URLCONF = 'realestate.urls'
 
@@ -146,7 +145,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'realestate/static')
 ]
-django_heroku.settings(locals())
 
 #Media Folders
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
