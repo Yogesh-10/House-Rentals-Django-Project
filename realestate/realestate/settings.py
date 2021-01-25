@@ -25,7 +25,7 @@ SECRET_KEY = '=j0t#mkrggr0#m)c_-l42-0!yuc9!)$nlli-1-0w_$jo-0y=*!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://home-rentals-yogesh.herokuapp.com/', 'localhost']
+ALLOWED_HOSTS = ['home-rentals-yogesh.herokuapp.com/', 'localhost']
 
 
 # Application definition
