@@ -28,7 +28,7 @@ environ.Env.read_env()
 SECRET_KEY = env("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'house-rentals-yogesh.herokuapp.com']
 
@@ -90,7 +90,7 @@ WSGI_APPLICATION = 'realestate.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': env("NAME"),
         'USER': env("USER"),
         'PASSWORD': env("PASSWORD"),
@@ -154,8 +154,3 @@ from django.contrib.messages import constants as messages
 MESSAGE_TAGS = {
     messages.ERROR: 'danger'
 }
-
-try:
-    from .local_settings import *
-except ImportError:
-    pass
