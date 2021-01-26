@@ -25,7 +25,7 @@ env = environ.Env()
 # reading .env file
 environ.Env.read_env()
 
-SECRET_KEY=env("SECRET_KEY")
+SECRET_KEY='hvtyct5r5r#@#$#$&vtycty65fdipbnuib56d5665#^&xy'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
