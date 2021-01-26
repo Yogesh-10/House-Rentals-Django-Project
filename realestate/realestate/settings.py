@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 # reading .env file
 
-SECRET_KEY='hvtyct5r5r#@#$#$&vtycty65fd56d5665#^&xy'
+SECRET_KEY='hvtyct5r5r#@erv24r2423r35@##$#$&vtycty65fd56d5665#^&xy'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -144,7 +144,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'realestate/static')
 ]
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 
 #Media Folders
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
