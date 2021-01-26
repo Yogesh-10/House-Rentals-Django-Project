@@ -90,7 +90,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'house-rentalDB',
         'USER': 'postgres',
-        'PASSWORD': '',
+        'PASSWORD': 'Yogesh10@',
         'HOST': 'localhost',
         'PORT': 5432
     }
@@ -141,6 +141,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'realestate/static')
 ]
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 #Media Folders
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
