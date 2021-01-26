@@ -25,7 +25,7 @@ env = environ.Env()
 # reading .env file
 environ.Env.read_env()
 
-SECRET_KEY='hvtyct5r5r#@#$#$&vtycty65fdipbnuib56d5665#^&xy'
+SECRET_KEY='hvtyct5r5r#@#$#$&vtycty65fd56d5665#^&xy'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -91,10 +91,10 @@ WSGI_APPLICATION = 'realestate.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': env('NAME'),
-        'USER': env('USER'),
-        'PASSWORD': env('PASSWORD'),
-        'HOST': env('HOST'),
+        'NAME': env("NAME"),
+        'USER': env("USER"),
+        'PASSWORD': env("PASSWORD"),
+        'HOST': env("HOST"),
         'PORT': 5432
     }
 }
