@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY='hvtyct5r5r#@erv24r2423r35@##$#$&vtycty65fd56d5665#^&xy'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['house-rental-yogesh.herokuapp.com']
 
@@ -91,7 +91,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'house-rentalDB',
         'USER': 'postgres',
-        'PASSWORD': 'Yogesh10@',
+        'PASSWORD': '',
         'HOST': 'localhost',
         'PORT': 5432
     }
